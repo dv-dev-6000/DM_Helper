@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3C3C"
+    tools:context=".AddEntity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Name:"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="HP:"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Condition:"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Initiative:"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:text="Max HP:"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/et_hp" />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="238dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/iv_4"
+        app:layout_constraintTop_toBottomOf="@+id/radGroup"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_ini"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_ac"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/et_ini"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_con"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="17"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_hp"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="17"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="OK"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_url" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_ok"
+        app:layout_constraintTop_toTopOf="@+id/btn_ok" />
+
+    <EditText
+        android:id="@+id/et_hpMax"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/iv_4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_3"
+        app:layout_constraintTop_toTopOf="@+id/iv_3"
+        app:srcCompat="@drawable/player_img"
+        tools:srcCompat="@drawable/player_img" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Neutral"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/iv_3"
+        app:layout_constraintStart_toStartOf="@+id/iv_3" />
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_1"
+        app:layout_constraintTop_toTopOf="@+id/iv_1"
+        app:srcCompat="@drawable/enemy_img"
+        tools:srcCompat="@drawable/enemy_img" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enemy Boss"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/iv_1"
+        app:layout_constraintStart_toStartOf="@+id/iv_1" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enemy"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/iv_2"
+        app:layout_constraintStart_toStartOf="@+id/iv_2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="8dp"
+        android:text="Player"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/iv_4"
+        app:layout_constraintStart_toStartOf="@+id/iv_4" />
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_2"
+        app:srcCompat="@drawable/neutral_img"
+        tools:srcCompat="@drawable/neutral_img" />
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/boss_img"
+        tools:srcCompat="@drawable/boss_img" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Avatar: "
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <RadioGroup
+        android:id="@+id/radGroup"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="45dp"
+        android:checkedButton="@id/rad_enemyBoss"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_1">
+
+        <RadioButton
+            android:id="@+id/rad_enemyBoss"
+            android:layout_width="95dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rad_enemy"
+            android:layout_width="99dp"
+            android:layout_height="52dp" />
+
+        <RadioButton
+            android:id="@+id/rad_neutral"
+            android:layout_width="91dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rad_player"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkbx_addURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Add Image URL:"
+        android:textColor="#FF9800"
+        app:layout_constraintEnd_toStartOf="@+id/et_url"
+        app:layout_constraintTop_toTopOf="@+id/et_url" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="AC:"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/et_ini" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

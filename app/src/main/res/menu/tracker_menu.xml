@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tMenu_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/tMenu_roller"
+        android:title="Dice Roller" />
+    <item
+        android:id="@+id/tMenu_clear"
+        android:title="Clear List" />
+    <item
+        android:id="@+id/tMenu_load"
+        android:title="Load List" />
+    <item
+        android:id="@+id/tMenu_save"
+        android:title="Save List" />
+</menu>
